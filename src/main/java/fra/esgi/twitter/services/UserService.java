@@ -22,7 +22,7 @@ public class UserService {
         Cookie cookie = new Cookie("userId", user.getUserId().toString());
         response.addCookie(cookie);
         return "{\"authorid\":" + user.getUserId() +"}"; // retourner le user
-        // Faire session
+        
     }
 
     public String login(String login, HttpServletResponse response){

@@ -33,7 +33,7 @@ public class PostService {
             throw new Exception("message shouldn't be empty");
         }
         postRepository.save(post);
-        return "{\"tweetid\":" + post.getPostId() +"}"; // mettre le statut réponse
+        return "{\"tweetid\":" + post.getPostId() +"}";
     }
 
     public PostDTO getPost(Long id) {
